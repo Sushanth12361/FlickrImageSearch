@@ -1,0 +1,79 @@
+[versions]
+agp = "8.4.0"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+
+coreTestingVersion = "2.2.0"
+testRunnerVersion = "1.5.2"
+lifecycleRuntimeKtx = "2.8.1"
+activityCompose = "1.9.0"
+composeBom = "2024.05.00"
+retrofitVersion = "2.11.0"
+koinVersion = "3.5.6"
+coroutinesVersion = "1.8.0"
+okhttpVersion = "4.12.0"
+gsonVersion = "2.11.0"
+glideVersion = "4.16.0"
+glideComposeVersion = "1.0.0-alpha.1"
+mockitoVersion = "4.0.0"
+uiTestJunit4Android = "1.6.7"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "coreTestingVersion" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "testRunnerVersion" }
+
+#Mockito
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoVersion" }
+mockito-inline = { group = "org.mockito", name = "mockito-inline", version.ref = "mockitoVersion" }
+mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoVersion" }
+
+#Gson
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion"}
+
+#Retrofit
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion"}
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion"}
+retrofit-converter-scalars = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "retrofitVersion"}
+
+#Koin
+koin = { group = "io.insert-koin", name = "koin-android", version.ref = "koinVersion"}
+koin-test = { group = "io.insert-koin", name = "koin-test", version.ref = "koinVersion"}
+
+#Coroutines
+coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesVersion"}
+coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesVersion"}
+
+#OkHttp
+okhttp = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttpVersion"}
+
+#Glide
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideVersion"}
+glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glideVersion"}
+glide-compose = { group = "com.github.bumptech.glide", name = "compose", version.ref = "glideComposeVersion"}
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

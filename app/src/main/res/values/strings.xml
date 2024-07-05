@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Flickr Image Search</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="type_your_search">Type your search</string>
+    <string name="initial_state">Please type a text to find a Flickr photo.</string>
+    <string name="empty_state">No results were found for the search, please try with another text.</string>
+    <string name="image_details">Image Details</string>
+</resources>
